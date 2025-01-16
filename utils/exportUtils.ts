@@ -84,7 +84,6 @@ ${data.variableName}_manager = autogen.GroupChatManager(
     description="I am an AI assistant that helps with research and provides detailed information.",
     llm_config={
         "config_list": [{
-            "model":"${data.selectedModel || OAIModelsEnum.GPT_4o}",
             "api_key": "YOUR_OPENAI_API_KEY"  #Placeholder for API key
         }],
         "assistant_id": "YOUR_ASSISTANT_ID"   #Placeholder for assistant ID, check: https://platform.openai.com/assistants
@@ -140,7 +139,6 @@ ${data.variableName}_manager = autogen.GroupChatManager(
   nodes.forEach(node => {
     if (node.type === DotbaseNodesEnum.HUB) {
       const connectedAgents = edges
-        .filter(edge => edge.target === node.id)
         .map(edge => {
           const sourceNode = nodes.find(n => n.id === edge.source);
           return sourceNode?.data.variableName;
