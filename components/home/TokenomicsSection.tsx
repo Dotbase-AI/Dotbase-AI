@@ -123,12 +123,10 @@ export default function TokenomicsSection() {
                 </h3> */}
               </div>
             ))}
-          </div>
 
           <div className="p-5 flex justify-center mt-2">
             <div className="relative h-[280px] w-[800px] overflow-hidden rounded-2xl border border-yellow-600">
               <AnimatePresence mode="wait">
-                {tabs.map((tab) => (
                   activeState === tab.id && (
                     <motion.div
                       key={tab.id}
