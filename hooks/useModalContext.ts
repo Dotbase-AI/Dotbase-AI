@@ -1,4 +1,3 @@
-import React from 'react';
 
 type UseModalContextReturnType = {
   modal: React.JSX.Element | null;
@@ -6,8 +5,6 @@ type UseModalContextReturnType = {
 };
 
 function useModalContext(): UseModalContextReturnType {
-  const [modal, setModal] = React.useState<UseModalContextReturnType['modal']>(null);
   return { modal, setModal };
-}
 
 export default useModalContext;
