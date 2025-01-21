@@ -26,7 +26,6 @@ async function executePython(code: string): Promise<string> {
   debugLog('Execution started', {
     tempDir,
     tempFile,
-    codeLength: code.length
   });
 
   try {
@@ -58,7 +57,6 @@ async function executePython(code: string): Promise<string> {
 
       // Handle stdout
       pythonProcess.stdout.on('data', (data) => {
-        const chunk = data.toString();
         output += chunk;
         debugLog('Received stdout chunk:', chunk);
       });
@@ -133,7 +131,6 @@ export async function POST(request: Request) {
     
     if (error instanceof Error) {
       errorMessage = error.message;
-    } else if (typeof error === 'string') {
       errorMessage = error;
     } else if (error && typeof error === 'object' && 'message' in error) {
       errorMessage = String(error.message);

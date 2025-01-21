@@ -97,7 +97,6 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
       for (const entry of entries) {
         console.log(entry);
         updatePath();
-      }
     });
 
     // Observe the container element
@@ -135,7 +134,6 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
       )}
       viewBox={`0 0 ${svgDimensions.width} ${svgDimensions.height}`}
     >
-      <path
         d={pathD}
         stroke={pathColor}
         strokeWidth={pathWidth}

@@ -24,7 +24,6 @@ export const metadata: Metadata = {
         sizes: 'any',
       },
       {
-        url: '/icon.png',
         type: 'image/png',
         sizes: '32x32',
       },
@@ -34,8 +33,6 @@ export const metadata: Metadata = {
       sizes: '180x180',
     },
   },
-};
-
 export default function RootLayout({
   children,
 }: {
