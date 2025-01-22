@@ -95,7 +95,6 @@ export function HoverBorderGradient({
       {/* Secondary glow layer for depth */}
       <motion.div 
         className="absolute inset-0 z-0 rounded-[inherit] overflow-hidden"
-        style={{
           filter: "blur(8px)",
         }}
         animate={{
