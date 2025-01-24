@@ -63,7 +63,6 @@ const Nexus: React.FC<ReactFlowNodeProps> = (props) => {
               value={data?.variableName}
             />
           }
-          errors={errors?.[props.id]?.variableName}
         />
         <FieldSchema
           field={
