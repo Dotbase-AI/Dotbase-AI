@@ -5,12 +5,10 @@ type Props = {
   content: React.JSX.Element;
 };
 
-type ClsHeaderSkeletonProps = {
   name: string;
 };
 export const ClsHeaderSkeleton: React.FC<ClsHeaderSkeletonProps> = ({ name }) => {
   return (
-    <p className="text-xs">
       <span className="text-red-500">class</span>
       <span className="text-purple-400 pl-1">{name}</span>
     </p>
@@ -50,6 +48,5 @@ export const ToolbarSkeleton: React.FC<Props> = ({ header, content }) => {
     <div className="bg-slate-500/10 border rounded max-w-96">
       <div className="bg-slate-500/10 border-b-[0.5px] px-2 py-2">{header}</div>
       <div className="px-2 py-4">{content}</div>
-    </div>
   );
 };

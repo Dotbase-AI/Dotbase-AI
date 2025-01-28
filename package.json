@@ -19,7 +19,6 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@react-three/fiber": "^8.17.12",
     "@svgr/webpack": "^8.1.0",
-    "@tabler/icons-react": "^3.28.1",
     "@vercel/analytics": "^1.1.2",
     "@xyflow/react": "^12.4.2",
     "ace-builds": "^1.32.3",

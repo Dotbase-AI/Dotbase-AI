@@ -37,7 +37,6 @@ const Bridge: React.FC<ReactFlowNodeProps> = (props) => {
           width={20}
           className="text-gray-300 mr-2"
           onMouseEnter={() => setToolbarVisible(true)}
-          onMouseLeave={() => setToolbarVisible(false)}
         />
         <NodeToolbar isVisible={toolbarVisible} position={Position.Top}>
           <ToolbarSkeleton
@@ -62,7 +61,6 @@ const Bridge: React.FC<ReactFlowNodeProps> = (props) => {
               required
               onChange={onVarNameChange}
               value={data?.variableName}
-              type="text"
               placeholder="dotbase_agent"
             />
           }
