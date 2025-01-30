@@ -13,7 +13,6 @@ const Workspace = () => {
     };
     event.dataTransfer.setData('application/reactflow', JSON.stringify(newNode));
     event.dataTransfer.effectAllowed = 'move';
-  };
 
   const agents = [
     {
