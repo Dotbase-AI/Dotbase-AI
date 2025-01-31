@@ -58,7 +58,6 @@ export default function TokenomicsSection() {
         ]
       }
     },
-    {
       id: 4,
       color: "#2AD458",
       title: "Treasury",
@@ -76,7 +75,6 @@ export default function TokenomicsSection() {
     }
   ];
 
-  return (
     <section id="tokenomics" className="pt-36">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
@@ -105,7 +103,6 @@ export default function TokenomicsSection() {
                 onClick={() => handleStateChange(tab.id)}
                 className={`border-r border-[#eee] last:border-r-0 text-white py-2 px-1 cursor-pointer transition-all duration-300
                 ${activeState === tab.id ? 'text-yellow-600' : 'hover:text-yellow-600'}`}
-              >
                 <div className="mb-1 flex items-center justify-center gap-1">
                   {/* <span
                     className="w-[15px] h-[15px] rounded block"
