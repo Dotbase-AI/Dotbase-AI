@@ -2,7 +2,6 @@
 import { DnDFlowValidationSchema } from '@/utils/zod';
 import useDnDStore from '@/stores/useDnDStore';
 import _ from 'lodash';
-import React from 'react';
 import { Node } from 'reactflow';
 
 type ErrorObjType = {
@@ -16,7 +15,6 @@ type ValidatorContextType = {
   validate: (nds: Node[]) => boolean;
 };
 
-export const ValidatorContext = React.createContext<ValidatorContextType>({
   errors: {},
   validate: () => false,
 });
@@ -70,7 +68,6 @@ const ValidatorContextProvider = ({ children }: ModalContextProviderProps) => {
     [_getZodData],
   );
 
-  React.useEffect(() => {
     const filteredNodes = nodes.filter((node) => nds?.find((n) => n.id === node.id));
     if (prev && !_.isEqual(_getZodData(filteredNodes), prev)) {
       // after first submission, now validate the nodes has been validated in onChange event.
