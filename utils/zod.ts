@@ -1,4 +1,5 @@
 import { AgentSelectionStrategyEnum, OAIModelsEnum } from '@/utils/enum';
+import { z } from 'zod';
 
 const VARIABLE_NAME_REGEX = /^[a-zA-Z_][a-zA-Z0-9_]*$/;
 const VariableName = z
