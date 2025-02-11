@@ -28,6 +28,7 @@ type DnDStore = {
   onEdgesChange: (changes: EdgeChange[]) => void;
   setInstance: (instance: ReactFlowInstance) => void;
   setRfInstance: (instance: ReactFlowInstance) => void; 
+  deleteElements: () => void;
   duplicateSelection: () => void;
   setSelectedElements: (nodes: Node[], edges: Edge[]) => void;
   undoHistory: Array<{ nodes: Node[]; edges: Edge[]; }>;
@@ -117,6 +118,7 @@ const useDnDStore = create<DnDStore>((set, get) => ({
       edges: state.edges.filter(edge => 
         !selectedNodeIds.has(edge.source) && 
         !selectedNodeIds.has(edge.target) &&
+        !state.selectedEdges.find(e => e.id === edge.id)
       ),
       selectedNodes: [],
       selectedEdges: []
@@ -124,6 +126,7 @@ const useDnDStore = create<DnDStore>((set, get) => ({
   },
 
   duplicateSelection: () => {
+    const state = get();
     state.saveCurrentState();
 
     const newNodes = state.selectedNodes.map(node => ({
