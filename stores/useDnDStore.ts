@@ -134,7 +134,6 @@ const useDnDStore = create<DnDStore>((set, get) => ({
       id: `${node.id}-copy-${Date.now()}`,
       position: {
         x: node.position.x + 50,
-        y: node.position.y + 50
       }
     }));
 
