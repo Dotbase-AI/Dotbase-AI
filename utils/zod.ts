@@ -45,6 +45,7 @@ const CustomFunction = z.object({
 });
 
 const LLMOpenAI = z.object({
+  model: LLMEnum.default(OAIModelsEnum.GPT_3_5_TURBO),
   apiKey: z.string().optional(),
 });
 
