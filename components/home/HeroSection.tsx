@@ -22,7 +22,6 @@ export default function HeroSection() {
   const words = ["Smarter Workflows", "Seamless Processes", "Optimized Systems"];
 
 
-  // const [CA, setCA] = useState("");
   // const [isCopied, setIsCopied] = useState<boolean>(false);
   // useEffect(() => {
   //   axios.get("https://catools.dev3vds1.link/get/almaze-labs")

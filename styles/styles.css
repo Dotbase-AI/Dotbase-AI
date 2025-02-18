@@ -53,12 +53,14 @@
   background: rgba(100, 100, 100, 0.6);
   /* Enhanced gradient on hover */
   background-image: linear-gradient(
+    to bottom,
     rgba(100, 100, 100, 0.7),
     rgba(100, 100, 100, 0.5)
   );
 }
 
 /* Active state when scrollbar is being dragged */
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
   /* Darker color when active for pressed state feedback */
   background: rgba(120, 120, 120, 0.7);
 }
