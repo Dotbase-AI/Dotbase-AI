@@ -50,7 +50,6 @@ const Spark: React.FC<ReactFlowNodeProps> = (props) => {
       <div className="pb-2 px-2 bg-slate-500/10 text-sm">
         <div className="flex justify-between items-center">
           <Editor
-            value={code}
             onValueChange={onCustomFuncChange}
             placeholder="def my_action_cen(arg1, arg2):"
             highlight={(code) => highlight(code || '', languages.python!, 'py')}
@@ -64,7 +63,6 @@ const Spark: React.FC<ReactFlowNodeProps> = (props) => {
           />
         </div>
         {errors?.[props.id]?.func && <span className="text-red-500 text-xs">{errors?.[props.id]?.func}</span>}
-      </div>
       <Handle type="source" position={Position.Bottom} className="rounded-none border-none w-16 h-1" />
     </div>
   );

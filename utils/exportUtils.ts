@@ -14,9 +14,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-# Get API keys from environment variables
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-OPENAI_ASSISTANT_ID = os.getenv('OPENAI_ASSISTANT_ID')
 
 # ----------------- #
 `;

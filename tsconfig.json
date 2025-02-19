@@ -12,7 +12,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
     "paths": {
       "@/*": ["./*"]
     },
@@ -29,7 +28,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
     ".next/types/**/*.ts",
     "middleware.ts",
     "app/api/chat/route.js"
