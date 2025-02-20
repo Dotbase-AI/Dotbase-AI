@@ -26,6 +26,7 @@ async function executePython(code: string): Promise<string> {
   debugLog('Execution started', {
     tempDir,
     tempFile,
+    codeLength: code.length
   });
 
   try {
@@ -57,6 +58,7 @@ async function executePython(code: string): Promise<string> {
 
       // Handle stdout
       pythonProcess.stdout.on('data', (data) => {
+        const chunk = data.toString();
         output += chunk;
         debugLog('Received stdout chunk:', chunk);
       });

@@ -30,7 +30,6 @@ const Hub: React.FC<ReactFlowNodeProps> = (props) => {
   const onLLMChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const val = e.target.value;
     updateNode(props.id, { selectedModel: val });
-  };
 
   return (
     <div className="rounded-sm bg-slate-500/10 text-white w-[266px] border-none">

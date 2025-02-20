@@ -31,6 +31,5 @@
     ".next/types/**/*.ts",
     "middleware.ts",
     "app/api/chat/route.js"
-  ],
   "exclude": ["node_modules"]
 }
