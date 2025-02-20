@@ -11,7 +11,6 @@ import { Handle, NodeToolbar, Position, NodeProps as ReactFlowNodeProps, useReac
 const Hub: React.FC<ReactFlowNodeProps> = (props) => {
   const { errors } = React.useContext(ValidatorContext);
   const { updateNode } = useDnDStore();
-  const { getNode } = useReactFlow();
   const [toolbarVisible, setToolbarVisible] = React.useState(false);
   const data = getNode(props.id)?.data;
 
@@ -105,7 +104,6 @@ const Hub: React.FC<ReactFlowNodeProps> = (props) => {
       </div>
       <Handle type="target" position={Position.Top} className="rounded-none border-none w-16 h-1" />
     </div>
-  );
 };
 
 export default memo(Hub);
