@@ -4,7 +4,7 @@
 ![Dotbase Logo](https://i.imgur.com/UgGWBt5.png)
 **Create agent-based workforces with drag-and-drop simplicity**
 
-[Website](https://dotbase.ai) • [Documentation](https://dotbase.gitbook.io/dotbase)
+[Website](https://dotbase.ai) • [Documentation](https://dotbase-ai.gitbook.io/dotbase)
 
 </div>
 
@@ -104,7 +104,7 @@ python dotflow.py
 
 ## 🌟 Support
 
-- Documentation: [docs.dotbase.ai](https://dotbase.gitbook.io/dotbase)
+- Documentation: [docs.dotbase.ai](https://dotbase-ai.gitbook.io/dotbase)
 
 ---
 
