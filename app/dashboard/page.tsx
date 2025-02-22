@@ -176,7 +176,6 @@ const Dashboard = () => {
           fitView
           nodesDraggable={true}
           nodesConnectable={true}
-          selectNodesOnDrag={false}
           selectionMode={SelectionMode.Partial}
           selectionOnDrag={true}
           multiSelectionKeyCode={['Control', 'Meta']}
