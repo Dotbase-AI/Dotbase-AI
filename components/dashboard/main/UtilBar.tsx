@@ -35,7 +35,6 @@ const UtilBar = ({ onTutorialClick }: UtilBarProps) => {
   // State management for code execution
   const [showEditor, setShowEditor] = useState(false);
   const [output, setOutput] = useState<string>('');
-  const [error, setError] = useState<string | null>(null);
   const [isExecuting, setIsExecuting] = useState(false);
   
   // Global state and authentication hooks
@@ -44,7 +43,6 @@ const UtilBar = ({ onTutorialClick }: UtilBarProps) => {
   const { nodes, edges, clearNodes } = useDnDStore();
 
   // Initialize random username and avatar on component mount
-  useEffect(() => {
     const randomIndex = Math.floor(Math.random() * NICKNAMES.length);
     const selectedName = NICKNAMES[randomIndex];
     setUserName(selectedName);
