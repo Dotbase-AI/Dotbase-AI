@@ -9,7 +9,6 @@ import { NodeProps, Node as ReactFlowNode } from 'reactflow';
 
 // Enum defining all available node types
 export enum DotbaseNodesEnum {
-  BRIDGE = 'BRIDGE',
   HUB = 'HUB',
   LUMINA = 'LUMINA',
   SPARK = 'SPARK',
@@ -62,7 +61,6 @@ export const DOTBASE_NODES: { [k in DotbaseNodesEnum]: DotbaseNodeType } = {
       },
     },
   },
-  SPARK: {
     id: DotbaseNodesEnum.SPARK,
     type: DotbaseNodesEnum.SPARK,
     dragHandle: `.${DotbaseNodesEnum.SPARK}`,
@@ -92,5 +90,4 @@ export const CUSTOM_DOTBASE_NODES: { [_ in DotbaseNodesEnum]: React.ComponentTyp
   HUB: Hub,
   LUMINA: Lumina,
   SPARK: Spark,
-  NEXUS: Nexus,
 };
