@@ -101,7 +101,6 @@ async function executePython(code: string): Promise<string> {
       }, timeoutDuration);
 
       pythonProcess.on('close', () => {
-        clearTimeout(timeout);
       });
     });
     
