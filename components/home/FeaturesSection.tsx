@@ -6,6 +6,7 @@ import { useState } from "react";
 
 interface IFeature {
   icon: JSX.Element;
+  title: string;
   description: JSX.Element;
 }
 

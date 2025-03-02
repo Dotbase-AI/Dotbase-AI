@@ -7,7 +7,6 @@ type Props = {
 
   name: string;
 };
-export const ClsHeaderSkeleton: React.FC<ClsHeaderSkeletonProps> = ({ name }) => {
   return (
       <span className="text-red-500">class</span>
       <span className="text-purple-400 pl-1">{name}</span>
@@ -15,7 +14,6 @@ export const ClsHeaderSkeleton: React.FC<ClsHeaderSkeletonProps> = ({ name }) =>
   );
 };
 
-type MethodHeaderSkeletonProps = {
   name: string;
 };
 export const MethodHeaderSkeleton: React.FC<MethodHeaderSkeletonProps> = ({ name }) => {

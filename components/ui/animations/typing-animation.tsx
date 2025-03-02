@@ -58,7 +58,6 @@ export function TypingAnimation({
   }, [delay, startOnView]);
 
   useEffect(() => {
-    if (!started) return;
 
     let i = 0;
     const typingEffect = setInterval(() => {
@@ -72,7 +71,6 @@ export function TypingAnimation({
 
     return () => {
       clearInterval(typingEffect);
-    };
   }, [children, duration, started]);
 
   return (
